@@ -1,12 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css'%}">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Simply</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
+ 
 <body>
-    <h1 align="center" >IT WORKSS!</h1>
+    <header>
+        <div class="wrapper">
+            <h1>Museum<span class="color">.</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Book Ticket</a></li>
+                    <li><a href="#">Events</li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="hero-image">
+        <div class="wrapper">
+            <h2 id="main"><Strong>Welcome to</Strong><br>
+            the Museum!</h2> 
+            <a href="#" class="button-1">Get Started</a>
+        </div>
+    </div>
+    
+    <div id="features">
+        <div class="wrapper">
+            <ul>
+                <li class="feature-1">
+                    <h4>seamless bookings</h4>
+                    <p>We are here to help you.</p>
+                </li>
+                <li class="feature-2">
+                    <h4>Go where you want</h4>
+                    <p>We are here to help you.</p>
+                    
+                </li>
+                <li class="feature-3">
+                    <h4>Easy verification</h4>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="primary-content">
+        <div class="wrapper">
+            <article>
+                <h3>Featured content</h3>
+                <p>lorem ipsum dolor sit</p>
+                <a href="#" src="{% static 'images/museum.jpg' %}"></a>
+            </article>
+        </div>
+    </div>
+    
+    <div id="secondary-content">
+        <div class="wrapper">
+            <article></article>
+            <article></article>
+        </div>
+    </div>
+    
+    <div id="cta">
+        <div class="wrapper">
+        </div>
+    </div>
+    
+    <footer>
+        <div class="wrapper">
+            <div id="footer-info"></div>
+            <div id="footer-links">
+                <ul></ul>
+                <ul></ul>
+                <ul></ul>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
