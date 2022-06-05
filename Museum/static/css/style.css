@@ -174,10 +174,14 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image:url(../images/museum-bg.jpg);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
   background-image: url(../images/musuem-bg.jpg);
+=======
+>>>>>>> e7ba8316b6d824762dee2dd20a64a92ef8c73141
   background-size: 100% 100%;
 }
 
