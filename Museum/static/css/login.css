@@ -558,3 +558,49 @@ a{
 	}
 	
 }
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+  	margin:150px;
+	border-radius:10px;
+	border-style: groove;
+}
+
+.form-group{
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	align-items: center;
+}
+.form-control{
+	margin: 20px;
+	padding: 5px;
+	text-align: center;
+	font: size 13px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+	font-size: 16px;
+	font-family: font Awesome;
+	padding: 5px;
+	align: center;
+}
+.btn-default{
+	text-align: center;
+	background-color: #448AFF;
+	color: #fff;
+	border-radius: 10px;
+	border-style: inherit;
+	padding: 6px;
+	font-size: 16px;
+
+
+}
+.form-control a {
+	color: #448AFF;
+	font-family: "Helvetica Neue", sans-serif;
+	
+}
