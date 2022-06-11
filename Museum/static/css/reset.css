@@ -125,20 +125,7 @@ header nav ul li a {
     float: left;
     margin-right: 10px;
     text-align: center;
-}
-#features ul li.feature-1 {
-    background:cover url(../images/feature-icon1.png) no-repeat top center;
-    background-size: cover;
-}
-#features ul li.feature-2 {
-    background: url(../images/feature-icon2.png) no-repeat top center;
-    background-size: cover;
-}
-#features ul li.feature-3 {
-    background: url(../images/feature-icon3.png) no-repeat top center;
-    background-size: cover;
-}
-
+}   
 #primary-content {
     background-color: #f8fafa;
     padding: 60px 0;
