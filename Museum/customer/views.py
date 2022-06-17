@@ -11,5 +11,6 @@ def shop(request):
     return render(request,'shop.html')
 def register(request):
     return render(request,'register.html')
-    
+def bookticket(request):
+    return render(request,'book_ticket.html')    
     
