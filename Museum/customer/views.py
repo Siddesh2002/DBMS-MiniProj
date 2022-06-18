@@ -11,6 +11,5 @@ def bookticket(request):
     return render(request,'book_ticket.html') 
 def event(request):
     objs=Event.objects.all()
-
     return render(request,'event.html',{'dests':objs})   
     
