@@ -9,3 +9,11 @@ class Event(models.Model):
     offer=models.BooleanField(default=False)
     price=models.FloatField(default=0)
 
+class Ticket(models.Model):
+    Username=models.CharField(max_length=500)
+    Date=models.DateField()
+    Amount=models.FloatField()
+    No_of_persons=models.IntegerField(default=1)
+    E_name=models.CharField(max_length=200)
+
+

@@ -1,9 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User,auth
-from .models import Event
+from .models import Event,Ticket
 from django.contrib import messages
-price=0
-nme=""
 # Create your views here.
 def home(request):
     return render(request,'home.html')
@@ -23,16 +21,22 @@ def ticket_view(request,det_id):
         eid=Event.objects.get(id=det_id)
     except Event.DoesNotExist:
         messages.info('Event: Id not found')
-    price=int(eid.price)
-    nme=eid.name
     return render(request,'book_ticket.html',{'ename':eid.name})
 def calculate(request):
     user_detail=request.user
-    no=int(request.POST['nopersons'])
     dob=request.POST['dob']
+    name=request.POST['ename']
+    no=int(request.POST['persons'])
+    events=Event.objects.get(name=name)
+    price=events.price
     amount=price*no
-    print(amount)
-    print(nme)
-    return render(request,'printreceipt.html',{'amount':amount,'Firstname':user_detail.first_name, 'Lastname':user_detail.last_name,'nopersons':no,'dob':dob,'eid':nme})
+    tick=Ticket()
+    tick.Username=user_detail.username
+    tick.Date=dob
+    tick.Amount=amount
+    tick.No_of_persons=no
+    tick.E_name=name
+    tick.save();
+    return render(request,'printreceipt.html',{'amount':amount,'Firstname':user_detail.first_name, 'Lastname':user_detail.last_name,'nopersons':no,'dob':dob,'eid':name})
     
 
