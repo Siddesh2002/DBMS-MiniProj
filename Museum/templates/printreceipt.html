@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\register.css'%}">
+    <title>PrintReceipt</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Print Receipt</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input class="input-box" type="text" id="fname" readonly>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input class="input-box" type="text" id="lname" readonly>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Gender</span>
+                        <input class="input-box" type="text" id="gender" readonly>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of Visit</span>
+                        <input class="input-box" type="date" id="visitdate" readonly>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Event</span>
+                        <input class="input-box" type="text" id="event" readonly>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Number of people</span>
+                        <input class="input-box" type="text" id="noofpeople" readonly>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

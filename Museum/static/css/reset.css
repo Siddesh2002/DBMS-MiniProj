@@ -64,7 +64,7 @@ small {
 .wrapper {
     margin: 0 auto;
     padding: 0 10px;
-    width: 940px;
+    width: 1000px;
 }
 header {
     height: 120px;
@@ -116,13 +116,10 @@ header nav ul li a {
     background-color: #02b8dd;
     color: #fff;
 }
-#features ul {
-    margin: 80px 0;
-}
 #features ul li {
     width: 300px;
-    padding-top: 140px;
-    float: left;
+    padding-top: 30px;
+    float: center;
     margin-right: 10px;
     text-align: center;
 }   
