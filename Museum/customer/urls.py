@@ -9,5 +9,6 @@ urlpatterns = [
     path('shop',views.shop,name='shop'),
     path('bookticket',views.bookticket,name='bookticket'),
     path('event',views.event,name='event'),
-    path('printreceipt',views.printreceipt,name='printreceipt')
+    path('calculate',views.calculate,name='calculate'),
+    path('<det_id>',views.ticket_view,name='ticket_view')
 ]

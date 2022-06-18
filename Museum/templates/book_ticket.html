@@ -11,28 +11,23 @@
 <body>
     <div class="container">
         <div class="title">Book Ticket</div>
-            <form action="printreceipt" method="post">
+            <form action="calculate" method="post">
+                {% csrf_token %}
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Date of Visit</span>
-                        <input class="input-box" type="date" id="visitdate">
+                        <input class="input-box" type="date" name="dob"id="visitdate">
                     </div>
                     <div class="input-box">
                         <span class="details">Event</span>
-                        <input class="input-box" list="eventlist" id="event">
-                        <datalist id="eventlist">
-                            <option value="NONE">
-                            <option value="Are We Already Living in a Cyberpunk?">
-                            <option value="Space and Time">
-                            <option value="Rawrrrr! - Jurrasic Era">
-                        </datalist>
+                        <input class="input-box" list="eventlist" id="event" value="{{ename}}">
                     </div>
                     <div class="input-box">
                         <span class="details">Number of people</span>
-                        <input class="input-box" type="text" id="noofpeople">
+                        <input class="input-box" type="text" name="nopersons" id="noofpeople">
                     </div>
                     <div class="button">
-                        <input type="submit" value="Register">
+                        <input type="submit" value="Book">
                     </div>
             </form>
         </div>

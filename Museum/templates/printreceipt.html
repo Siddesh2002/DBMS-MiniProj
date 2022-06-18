@@ -15,27 +15,26 @@
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">First Name</span>
-                        <input class="input-box" type="text" id="fname" readonly>
+                        <input class="input-box" type="text" id="fname" value="{{Firstname}}" >
                     </div>
                     <div class="input-box">
                         <span class="details">Last Name</span>
-                        <input class="input-box" type="text" id="lname" readonly>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Gender</span>
-                        <input class="input-box" type="text" id="gender" readonly>
+                        <input class="input-box" type="text" id="lname" value="{{Lastname}}" >
                     </div>
                     <div class="input-box">
                         <span class="details">Date of Visit</span>
-                        <input class="input-box" type="date" id="visitdate" readonly>
+                        <input class="input-box" type="date" id="visitdate" value="{{dob}}" >
                     </div>
                     <div class="input-box">
                         <span class="details">Event</span>
-                        <input class="input-box" type="text" id="event" readonly>
+                        <input class="input-box" type="text" id="event"  value="{{eid}}" >
                     </div>
                     <div class="input-box">
                         <span class="details">Number of people</span>
-                        <input class="input-box" type="text" id="noofpeople" readonly>
+                        <input class="input-box" type="number" id="noofpeople" value="{{no}}" >
+                    </div>
+                    <div>
+                        <h3>Amount is: ${{amount}}</h3>
                     </div>
             </form>
         </div>
