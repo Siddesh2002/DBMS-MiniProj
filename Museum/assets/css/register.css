@@ -125,7 +125,7 @@ form .button input:hover
 {
     background:linear-gradient(170deg,#694ae6,#52668f)
 }
-@media (max-width:584px)
+@media (max-width:500px)
 {
     .container
     {

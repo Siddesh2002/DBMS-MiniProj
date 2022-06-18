@@ -18,7 +18,11 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="login">Login</a></li>
+                    {% if user.is_authenticated %}
+                    <li><a href="account/logout">Logout</a></li>
+                    {% else %}
+                    <li><a href="accounts/login">Login</a></li>
+                    {% endif %}
                     <li><a href="bookticket">Book Ticket</a></li>
                     <li><a href="#">Events</li>
                     <li><a href="#">Profile</a></li>

@@ -11,14 +11,15 @@
 </head>
 <body>
     <div class="container">
-    <form role="form">
+    <form role="form" action="login" method="post">
+      {% csrf_token %}
         <div class="form-group">
-          <label for="email">Email address:</label>
-          <input type="email" class="form-control" id="email">
+          <label for="username">Username</label>
+          <input type="text" name="username" class="form-control" id="email">
         </div>
         <div class="form-group">
           <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd">
+          <input type="password"name="password" class="form-control" id="pwd">
         </div>
         <div class="form-group">
           <label><input type="checkbox" class="form-control" id="chk-box"> Remember me</label>
@@ -30,6 +31,11 @@
             <a href="register" >Didn't have an account?create one</a>
         </div>
     </form>
+    <div>
+      {% for message in messages %}
+      <h3>{{message}}</h3>
+      {%  endfor %}
+    </div>
     </div>
 </body>
 </html>
