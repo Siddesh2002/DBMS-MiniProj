@@ -104,7 +104,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
+  background-image: url(../images/musuem-bg.jpg);
   background-size: 22px;
   background-repeat: no-repeat;
   background-position-y: 7px;
@@ -174,10 +174,14 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image:url(../images/museum-bg.jpg);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../images/slider-bg.jpg);
+<<<<<<< HEAD
+  background-image: url(../images/musuem-bg.jpg);
+=======
+>>>>>>> e7ba8316b6d824762dee2dd20a64a92ef8c73141
   background-size: 100% 100%;
 }
 

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\tickets.css'%}">
+    <title>Ticket_booking</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Book Ticket</div>
+            <form action="calculate" method="post">
+                {% csrf_token %}
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Date of Visit</span>
+                        <input class="input-box" type="date" name="dob"id="visitdate">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Event</span>
+                        <input class="input-box" list="eventlist" id="event" name="ename" value="{{ename}}">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Number of people</span>
+                        <input class="input-box" type="number" name="persons" id="noofpeople" >
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Book">
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

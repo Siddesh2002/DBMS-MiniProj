@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\register.css'%}">
+    <title>PrintReceipt</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Print Receipt</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input class="input-box" type="text" id="fname" value="{{Firstname}}" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input class="input-box" type="text" id="lname" value="{{Lastname}}" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of Visit</span>
+                        <input class="input-box" type="date" id="visitdate" value="{{dob}}" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Event</span>
+                        <input class="input-box" type="text" id="event" name="ename" value="{{eid}}" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Number of people</span>
+                        <input class="input-box" type="text" id="noofpeople" value="{{nopersons}}" >
+                    </div>
+                    <div>
+                        <h3>Amount is: {{amount}}</h3>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
